@@ -1,0 +1,25 @@
+#!/bin/bash
+# This hook is run after every virtualenv is activated.
+
+# This overrides the default behavior of placing the virtualenv's name
+# before our prompt.
+PS1="$_OLD_VIRTUAL_PS1"
+
+# Automatically jump to the project directory when `workon` is called.
+# <http://www.doughellmann.com/docs/virtualenvwrapper/tips.html#creating-project-work-directories>
+proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
+cd ~/Code/Revyver/$proj_name
+
+# After a virtualenv is activated, `cd` will jump to the root of the project.
+# rather than ~. Explicit paths will work as intended.
+# <http://www.doughellmann.com/docs/virtualenvwrapper/tips.html#changing-the-default-behavior-of-cd>
+cd () {
+    if (( $# == 0 ))
+    then
+        builtin cd ~/Code/Revyver/$proj_name
+    else
+        builtin cd "$@"
+    fi
+}
+cd
+
