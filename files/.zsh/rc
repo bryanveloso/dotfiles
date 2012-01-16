@@ -54,7 +54,7 @@ plugins=(
     terminalapp
 )
 
-[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+[[ -d "$HOME/.rbenv" ]] && eval "$(rbenv init -)"
 
 if [[ -f `brew --prefix`/share/python/virtualenvwrapper.sh ]]; then
     . `brew --prefix`/share/python/virtualenvwrapper.sh
