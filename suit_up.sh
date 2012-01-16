@@ -12,4 +12,7 @@ ls -1d .files/files/* .files/files/.* | while read f; do
     [ "$f" == '.files/files/.git' ] ||
     ln -vsf "$f" .
 done
-source ~/.zshrc
+
+# Let's hide the unsightly UNIX directories.
+chflags hidden ~/bin
+chflags hidden ~/etc
