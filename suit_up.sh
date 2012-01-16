@@ -14,5 +14,5 @@ ls -1d .files/files/* .files/files/.* | while read f; do
 done
 
 # Let's hide the unsightly UNIX directories.
-chflags hidden ~/bin
-chflags hidden ~/etc
+SetFile -P -a V ~/bin
+SetFile -P -a V ~/etc
