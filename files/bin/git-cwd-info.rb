@@ -23,7 +23,7 @@ def in_git_repo
 end
 
 def git_parse_branch
-  @git_parse_branch ||= `git current-branch`.chomp
+  @git_parse_branch ||= `git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'`.chomp
 end
 
 def git_head_commit_id
@@ -45,5 +45,5 @@ def rebasing_etc
 end
 
 if in_git_repo
-  print " %{\e[90m%}#{git_parse_branch} %{\e[37m%}#{git_head_commit_id}%{\e[0m%}#{rebasing_etc}#{git_cwd_dirty}"
+  print "%{\e[90m%}#{git_parse_branch} %{\e[37m%}#{git_head_commit_id}%{\e[0m%}#{rebasing_etc}#{git_cwd_dirty}"
 end
