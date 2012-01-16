@@ -9,6 +9,7 @@ setopt prompt_subst
 # Ignore duplicates in history.
 setopt hist_ignore_dups
 
+. $ZSH/oh-my-zsh.sh
 . ~/.zsh/prompt
 . ~/.zsh/aliases
 . ~/.zsh/env
@@ -56,5 +57,3 @@ plugins=(
 if [[ -f `brew --prefix`/share/python/virtualenvwrapper.sh ]]; then
     . `brew --prefix`/share/python/virtualenvwrapper.sh
 fi
-
-. $ZSH/oh-my-zsh.sh
