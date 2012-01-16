@@ -1,0 +1,47 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Colors.
+autoload -U colors
+colors
+setopt prompt_subst
+
+# Ignore duplicates in history.
+setopt hist_ignore_dups
+
+. ~/.zsh/prompt
+. ~/.zsh/aliases
+. ~/.zsh/env
+
+# Mappings for Ctrl/Option-left-arrow and Ctrl/Option-right-arrow for
+# moving across words.
+bindkey "\e\e[C" forward-word
+bindkey "\e\e[D" backward-word
+
+# Show completion on the first TAB.
+setopt menucomplete
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/.
+plugins=(
+    brew
+    cloudapp
+    django
+    git
+    git-flow
+    github
+    heroku
+    mercurial
+    pip
+    python
+    rails
+    rails3
+    rbenv
+    redis-cli
+    ruby
+    terminalapp
+)
+
+[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+
+source $ZSH/oh-my-zsh.sh
