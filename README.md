@@ -5,6 +5,9 @@ beloved iMac and MacBook Air.
 
 ## Installation
 
+(This entire project piggybacks off of [oh-my-zsh][5], so you're going to want
+to install that first.)
+
 Want to give this a shot? Actually, that's rhetorical since I'm asking myself
 that question. This is here so I don't forget since I'm prone to doing so.
 
@@ -12,7 +15,9 @@ that question. This is here so I don't forget since I'm prone to doing so.
 
 Running this will overwrite your existing `.zshrc` file, so make sure to
 **back it up** first! I claim no responsibility for any absent-mindedness
-(except my own). This will also add an unsightly `bin` directory to your home
+(except my own). You can also create the symlinks manually if you wish.
+
+This process will also add an unsightly `bin` directory to your home
 folder. If you don't want to see this in Finder:
 
     chflags hidden ~/bin
