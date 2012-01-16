@@ -43,6 +43,7 @@ plugins=(
     github
     heroku
     mercurial
+    osx
     pip
     python
     rails
