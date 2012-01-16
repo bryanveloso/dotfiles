@@ -3,17 +3,15 @@
 #
 
 function current_rbenv {
-    [ -f .rbenv-version ] && echo "$(rbenv version | awk '{print $1}') "
+    [ -f .rbenv-version ] && echo " $(rbenv version | awk '{print $1}')"
 }
 
 function current_venv {
-    [ $VIRTUAL_ENV ] && echo `basename $VIRTUAL_ENV`' '
+    [ $VIRTUAL_ENV ] && echo ' '`basename $VIRTUAL_ENV`
 }
 
-local emoticon="%(?,%{$fg[green]%}%{$reset_color%},:: %{$fg[red]%}❨╯°□°❩╯︵ ┻━┻ %{$reset_color%})"
+local emoticon="%(?,%{$fg[green]%}%{$reset_color%},%{$fg[red]%}❨╯°□°❩╯︵ ┻━┻  %{$reset_color%}:: )"
 
-PROMPT='
-%{$fg_bold[yellow]%}%~%{$reset_color%} ${emoticon}
-%{$fg_bold[blue]%}>%{$reset_color%} '
+PROMPT='%{$fg_bold[yellow]%}%c %{$fg_bold[blue]%}>%{$reset_color%} '
 PROMPT2='\'
-RPROMPT='%{$fg_bold[green]%}$(current_venv)%{$fg_bold[red]%}$(current_rbenv)%{$reset_color%}$(git-cwd-info.rb)'
+RPROMPT='${emoticon}%{$fg_bold[yellow]%}%~%{$reset_color%}%{$fg_bold[green]%}$(current_venv)%{$fg_bold[red]%}$(current_rbenv)%{$reset_color%}$(git-cwd-info.rb)'
