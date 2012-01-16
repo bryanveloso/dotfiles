@@ -10,6 +10,19 @@ that question. This is here so I don't forget since I'm prone to doing so.
 
     curl https://raw.github.com/bryanveloso/dotfiles/master/suit_up.sh | sh
 
+Running this will overwrite your existing `.zshrc` file, so make sure to back
+it up! I claim no responsibility for any absent-mindedness except my own. This
+will also add an unsightly `bin` directory to your home folder. If you don't
+want to see this in Finder:
+
+    chflags hidden ~/bin
+
+## Updating
+
+Updating `.files` is as easy as running:
+
+    upgrade_dotfiles
+
 ## Inspirations
 
 Crazy ideas beget other crazy ideas, and for those I have these fine people to thank:
