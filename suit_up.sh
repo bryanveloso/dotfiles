@@ -6,7 +6,7 @@
 
 cd &&
 [ -d '.files' ] || git clone git://github.com/bryanveloso/dotfiles.git .files &&
-ls -ld .files/files/* .files/files/.* | while read f; do
+ls -1d .files/files/* .files/files/.* | while read f; do
     [ "$f" == '.files/files/.' ] ||
     [ "$f" == '.files/files/..' ] ||
     [ "$f" == '.files/files/.git' ] ||
