@@ -23,3 +23,4 @@ cd () {
 }
 cd
 
+rehash
