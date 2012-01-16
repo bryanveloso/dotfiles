@@ -4,11 +4,11 @@
 # Emits Git metadata for use in a Zsh prompt.
 #
 # AUTHOR:
-#  Ben Hoskings
-#  https://github.com/benhoskings/dot-files/blob/master/files/bin/git_cwd_info
+#   Ben Hoskings
+#   https://github.com/benhoskings/dot-files/blob/master/files/bin/git_cwd_info
 #
 # MODIFIED:
-#  Geoffrey Grosenbach http://peepcode.com
+#   Geoffrey Grosenbach http://peepcode.com
 
 # The methods that get called more than once are memoized.
 
