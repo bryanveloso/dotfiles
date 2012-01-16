@@ -1,0 +1,42 @@
+[user]
+    email = bryan@revyver.com
+	name = Bryan Veloso
+[core]
+    editor = subl
+    excludesfile = /Users/Bryan/.gitignore
+    pager = cat
+    quotepath = false
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+    ui = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    frag = magenta bold
+    meta = yellow bold
+    new = green bold
+    old = red bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[apply]
+    whitespace = nowarn
+[branch]
+    autosetupmerge = always
+[merge]
+    summary = true
+    tool = opendiff
+[rebase]
+    autosquash = true
+
+[github]
+    user = bryanveloso
