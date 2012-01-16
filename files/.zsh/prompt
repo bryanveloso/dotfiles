@@ -2,10 +2,6 @@
 # that the point?
 #
 
-function project_pwd {
-    echo $(pwd | sed -e "s,^$HOME,~,")
-}
-
 function current_rbenv {
     [ -f .rbenv-version ] && echo "$(rbenv version | awk '{print $1}') "
 }
@@ -14,8 +10,10 @@ function current_venv {
     [ $VIRTUAL_ENV ] && echo `basename $VIRTUAL_ENV`' '
 }
 
+local emoticon="%(?,%{$fg[green]%}%{$reset_color%},:: %{$fg[red]%}'\u2768╯°□°\u2769╯︵ ┻━┻ '%{$reset_color%})"
+
 PROMPT='
-%{$fg_bold[yellow]%}$(project_pwd)%{$reset_color%}
+%{$fg_bold[yellow]%}%~%{$reset_color%} ${emoticon}
 %{$fg_bold[blue]%}>%{$reset_color%} '
 PROMPT2='\'
 RPROMPT='%{$fg_bold[green]%}$(current_venv)%{$fg_bold[red]%}$(current_rbenv)%{$reset_color%}$(git-cwd-info.rb)'
