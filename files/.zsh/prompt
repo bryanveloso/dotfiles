@@ -10,7 +10,7 @@ function current_venv {
     [ $VIRTUAL_ENV ] && echo `basename $VIRTUAL_ENV`' '
 }
 
-local emoticon="%(?,%{$fg[green]%}%{$reset_color%},:: %{$fg[red]%}'\u2768╯°□°\u2769╯︵ ┻━┻ '%{$reset_color%})"
+local emoticon="%(?,%{$fg[green]%}%{$reset_color%},:: %{$fg[red]%}❨╯°□°❩╯︵ ┻━┻ %{$reset_color%})"
 
 PROMPT='
 %{$fg_bold[yellow]%}%~%{$reset_color%} ${emoticon}
