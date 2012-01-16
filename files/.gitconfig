@@ -8,6 +8,14 @@
     quotepath = false
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    df = diff
+    lg = log -p
+    st = status
+
 [color]
     branch = auto
     diff = auto
