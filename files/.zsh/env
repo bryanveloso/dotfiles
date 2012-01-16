@@ -1,0 +1,24 @@
+# General OS environment settings.
+export EDITOR="subl -w"
+export PATH="$HOME/bin:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin/:/sbin:/usr/X11/bin"
+export MANPATH="/usr/local/share/man:/usr/X11/man:/usr/share/man"
+
+# Node.
+export NODE_PATH="/usr/local/lib/node"
+
+# Python.
+export PIP_RESPECT_VIRTUALENV="true"
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--no-site-packages"
+export WORKON_HOME="/Users/Bryan/.virtualenvs"
+
+# Ruby.
+export RAILS_ENV="development"
+
+# Project-specific.
+# GitHub.
+export GITHUB_ROOT="/Users/Bryan/GitHub/github"
+
+# Hello! Ranking.
+export DJANGO_SETTINGS_MODULE="modules.locals"

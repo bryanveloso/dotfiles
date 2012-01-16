@@ -13,6 +13,15 @@ setopt hist_ignore_dups
 . ~/.zsh/aliases
 . ~/.zsh/env
 
+# General history related stuff.
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt extendedglob notify
+setopt append_history
+setopt inc_append_history
+bindkey -e
+
 # Mappings for Ctrl/Option-left-arrow and Ctrl/Option-right-arrow for
 # moving across words.
 bindkey "\e\e[C" forward-word
@@ -44,4 +53,8 @@ plugins=(
 
 [[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
-source $ZSH/oh-my-zsh.sh
+if [[ -f `brew --prefix`/share/python/virtualenvwrapper.sh ]]; then
+    . `brew --prefix`/share/python/virtualenvwrapper.sh
+fi
+
+. $ZSH/oh-my-zsh.sh
