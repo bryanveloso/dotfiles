@@ -12,7 +12,7 @@ that question. This is here so I don't forget since I'm prone to doing so.
 
 Running this will overwrite your existing `.zshrc` file, so make sure to
 **back it up** first! I claim no responsibility for any absent-mindedness
-except my own. This will also add an unsightly `bin` directory to your home
+(except my own). This will also add an unsightly `bin` directory to your home
 folder. If you don't want to see this in Finder:
 
     chflags hidden ~/bin
