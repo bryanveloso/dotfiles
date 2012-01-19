@@ -1,6 +1,3 @@
-[user]
-    email = bryan@revyver.com
-	name = Bryan Veloso
 [core]
     editor = subl
     excludesfile = /Users/Bryan/.gitignore
