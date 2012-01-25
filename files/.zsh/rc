@@ -9,6 +9,28 @@ setopt prompt_subst
 # Ignore duplicates in history.
 setopt hist_ignore_dups
 
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/.
+plugins=(
+    brew
+    cloudapp
+    django
+    git
+    git-flow
+    github
+    heroku
+    mercurial
+    osx
+    pip
+    python
+    rails
+    rails3
+    rbenv
+    redis-cli
+    ruby
+    terminalapp
+)
+
 . $ZSH/oh-my-zsh.sh
 . ~/.zsh/prompt
 . ~/.zsh/aliases
@@ -31,28 +53,6 @@ bindkey "\e\e[D" backward-word
 
 # Show completion on the first TAB.
 setopt menucomplete
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/.
-plugins=(
-    brew
-    cloudapp
-    django
-    git
-    git-flow
-    github
-    heroku
-    mercurial
-    osx
-    pip
-    python
-    rails
-    rails3
-    rbenv
-    redis-cli
-    ruby
-    terminalapp
-)
 
 [[ -d "$HOME/.rbenv" ]] && eval "$(rbenv init -)"
 
