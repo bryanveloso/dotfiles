@@ -1,11 +1,9 @@
+alias browse="hub browse"
 alias mate="subl"
 alias nano="subl"
-
-# Directory aliases.
-alias github="cd ~/Code/GitHub/$argv"
-alias revyver="cd ~/Code/Revyver/$argv"
 
 # Configuration aliases.
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias upgrade_dotfiles="~/.files/tools/upgrade.sh"
 alias zshconfig="subl ~/.zshrc"
+alias zshreload="source ~/.zshrc"
