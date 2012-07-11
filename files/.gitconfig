@@ -14,14 +14,14 @@
     co = checkout
     df = diff
     lg = log -p
-    st = status
+    st = status -sb
 
 [color]
     branch = auto
     diff = auto
     interactive = auto
     status = auto
-    ui = true
+    ui = 1
 [color "branch"]
     current = yellow reverse
     local = yellow
@@ -39,12 +39,17 @@
 [apply]
     whitespace = nowarn
 [branch]
-    autosetupmerge = always
+    autosetupmerge = true
 [merge]
     summary = true
     tool = opendiff
 [rebase]
     autosquash = true
-
-[github]
-    user = bryanveloso
+[push]
+    default = current
+[credential]
+    helper = osxkeychain
+[help]
+    autocorrect = 1
+[rerere]
+    enabled = 1
