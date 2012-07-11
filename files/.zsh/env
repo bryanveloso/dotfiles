@@ -1,7 +1,7 @@
 # General OS environment settings.
 export EDITOR="subl -w"
-export GIT_EDITOR=EDITOR
-export PATH="$HOME/bin:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin/:/sbin:/usr/X11/bin"
+export PATH="$HOME/bin:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin:$PATH"
+export GIT_EDITOR=$EDITOR
 export MANPATH="/usr/local/share/man:/usr/X11/man:/usr/share/man"
 
 # Node.
