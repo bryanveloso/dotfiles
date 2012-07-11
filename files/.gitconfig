@@ -1,3 +1,6 @@
+[include]
+    path = /Users/Bryan/.gitconfig.private
+
 [core]
     editor = subl
     excludesfile = /Users/Bryan/.gitignore

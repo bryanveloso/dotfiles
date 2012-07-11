@@ -28,6 +28,16 @@ Updating `.files` is as easy as running:
 
     upgrade_dotfiles
 
+## Special Stuff
+
+As of `git` 1.7.10, you can include files in your .gitconfig. I have moved
+all of my sensitive configurations (include name and email, as to not clobber
+your system) into the below `.gitconfig.private` file.
+
+    [include]
+        path = /Users/Bryan/.gitconfig.private
+
+
 ## Inspirations
 
 Crazy ideas beget other crazy ideas, and for those I have these fine people to thank:
