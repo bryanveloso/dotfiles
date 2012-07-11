@@ -21,6 +21,3 @@ export RAILS_ENV="development"
 # Project-specific.
 # GitHub.
 export GITHUB_ROOT="/Users/Bryan/GitHub/github"
-
-# Hello! Ranking.
-export DJANGO_SETTINGS_MODULE="modules.locals"
