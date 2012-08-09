@@ -9,6 +9,14 @@ setopt prompt_subst
 # Ignore duplicates in history.
 setopt hist_ignore_dups
 
+# Use case sensitive completion.
+CASE_SENSITIVE="true"
+
+# Auto-completion specific.
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
+compinit
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/.
 plugins=(
