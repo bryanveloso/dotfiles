@@ -4,5 +4,5 @@ alias mate="subl"
 # Configuration aliases.
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias upgrade_dotfiles="~/.files/tools/upgrade.sh"
-alias zshconfig="subl ~/.zshrc"
+alias zshconfig="subl ~/.files"
 alias zshreload="source ~/.zshrc"
