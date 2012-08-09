@@ -11,13 +11,8 @@ export NODE_PATH="/usr/local/lib/node"
 export PIP_RESPECT_VIRTUALENV="true"
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--no-site-packages"
 export VIRTUALENVWRAPPER_HOOK_DIR="/Users/Bryan/.files/files/bin/virtualenvwrapper"
 export WORKON_HOME="/Users/Bryan/.virtualenvs"
 
 # Ruby.
 export RAILS_ENV="development"
-
-# Project-specific.
-# GitHub.
-export GITHUB_ROOT="/Users/Bryan/GitHub/github"
