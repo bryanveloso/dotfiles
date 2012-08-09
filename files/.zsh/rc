@@ -21,22 +21,28 @@ compinit
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/.
 plugins=(
     brew
+    bundler
     cloudapp
     django
+    gem
     git
     git-flow
     github
     heroku
     mercurial
+    npm
+    nyan
     osx
     pip
+    pow
     python
     rails
     rails3
+    rake
     rbenv
     redis-cli
     ruby
-    terminalapp
+    sublime
 )
 
 . $ZSH/oh-my-zsh.sh
