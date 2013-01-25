@@ -10,7 +10,6 @@ export NODE_PATH="/usr/local/lib/node"
 # Python.
 export PIP_RESPECT_VIRTUALENV="true"
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
 export VIRTUALENVWRAPPER_HOOK_DIR="/Users/Bryan/.files/files/bin/virtualenvwrapper"
 export WORKON_HOME="/Users/Bryan/.virtualenvs"
 
