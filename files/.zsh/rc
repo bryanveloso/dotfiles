@@ -49,7 +49,6 @@ plugins=(
 . ~/.zsh/prompt
 . ~/.zsh/aliases
 . ~/.zsh/env
-. ~/.autoenv/activate.sh
 
 # General history related stuff.
 HISTFILE=~/.zsh_history
