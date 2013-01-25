@@ -75,6 +75,6 @@ if [[ -f `brew --prefix`/share/python/virtualenvwrapper.sh ]]; then
     . `brew --prefix`/share/python/virtualenvwrapper.sh
 fi
 
-if [[ -d opt/boxen/env.sh ]]; then
+if [[ -f opt/boxen/env.sh ]]; then
     . opt/boxen/env.sh
 fi
