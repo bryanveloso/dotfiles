@@ -3,7 +3,7 @@
 #
 
 function current_rbenv {
-    [ -f .rbenv-version ] && echo " $(rbenv version | awk '{print $1}')"
+    [ -f .rbenv-version -o -f .ruby-version ] && echo " $(rbenv version | awk '{print $1}')"
 }
 
 function current_venv {
