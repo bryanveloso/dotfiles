@@ -9,7 +9,7 @@ PS1="$_OLD_VIRTUAL_PS1"
 # <http://www.doughellmann.com/docs/virtualenvwrapper/tips.html#creating-project-work-directories>
 proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
 cd ~/Code/Revyver/$proj_name
-autoenv-init
+autoenv_init
 
 # After a virtualenv is activated, `cd` will jump to the root of the project.
 # rather than ~. Explicit paths will work as intended.
@@ -18,10 +18,10 @@ cd () {
     if (( $# == 0 ))
     then
         builtin cd ~/Code/Revyver/$proj_name
-        autoenv-init
+        autoenv_init
     else
         builtin cd "$@"
-        autoenv-init
+        autoenv_init
     fi
 }
 cd
