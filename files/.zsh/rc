@@ -71,10 +71,10 @@ setopt menucomplete
 # [[ -d "$HOME/.rbenv" ]] && eval "$(rbenv init -)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-if [[ -f /opt/boxen/env.sh ]]; then
-    . /opt/boxen/env.sh
+if [[ -f `brew --prefix`/opt/autoenv/activate.sh ]]; then
+    . `brew --prefix`/opt/autoenv/activate.sh
 fi
 
-if [[ -f `brew --prefix`/share/python/virtualenvwrapper.sh ]]; then
-    . `brew --prefix`/share/python/virtualenvwrapper.sh
+if [[ -f `brew --prefix`/bin/virtualenvwrapper.sh ]]; then
+    . `brew --prefix`/bin/virtualenvwrapper.sh
 fi
