@@ -15,4 +15,3 @@ done
 
 # Let's hide the unsightly UNIX directories.
 SetFile -P -a V ~/bin
-SetFile -P -a V ~/etc
