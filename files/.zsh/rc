@@ -37,7 +37,6 @@ plugins=(
     pow
     python
     rails
-    rails3
     rake
     rbenv
     redis-cli
