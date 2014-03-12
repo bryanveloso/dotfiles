@@ -67,6 +67,9 @@ bindkey "\e\e[D" backward-word
 # Show completion on the first TAB.
 setopt menucomplete
 
+# Disable using "!" as a history searcher.
+setopt nobanghist
+
 # [[ -d "$HOME/.rbenv" ]] && eval "$(rbenv init -)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
