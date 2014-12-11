@@ -2,19 +2,23 @@
     path = /Users/Bryan/.gitconfig.private
 
 [core]
-    editor = subl
+    editor = subl --wait
     excludesfile = /Users/Bryan/.gitignore
     pager = cat
     quotepath = false
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [alias]
+    amend = commit --amend
     br = branch
     ci = commit
     co = checkout
     df = diff
+    l = log --graph --pretty=oneline --abbrev-commit
     lg = log -p
+    score = diff --shortstat
     st = status -sb
+    undo = reset --soft HEAD~1
 
 [color]
     branch = auto
@@ -53,3 +57,7 @@
     autocorrect = 1
 [rerere]
     enabled = 1
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
