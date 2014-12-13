@@ -20,28 +20,31 @@ compinit
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/.
 plugins=(
+    bower
     brew
     bundler
+    celery
     cloudapp
-    django
+    coffee
+    common-aliases
     gem
     git
     git-flow
     github
-    heroku
-    mercurial
     npm
     nyan
     osx
+    per-directory-history
     pip
     pow
+    pyenv
     python
     rails
-    rake
     rbenv
     redis-cli
-    ruby
     sublime
+    terminalapp
+    virtualenvwrapper
 )
 
 . $ZSH/oh-my-zsh.sh
