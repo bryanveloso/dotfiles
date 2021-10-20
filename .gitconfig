@@ -38,6 +38,9 @@
 	enabled = 1
 [status]
 	submoduleSummary = true
+[user]
+    name = Bryan Veloso
+    signingkey = B896EEA5BA83644C
 
 # Aliases.
 [alias]
