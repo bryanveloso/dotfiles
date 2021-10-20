@@ -1,3 +1,2 @@
-files/.ssh/*id*
-files/.ssh/authorized_keys
-files/.ssh/known_hosts
+.DS_Store
+.rbenv-local
