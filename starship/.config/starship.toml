@@ -1,0 +1,80 @@
+add_newline = true
+command_timeout = 5000
+
+[battery]
+disabled = true
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[➜](bold red) "
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "~"
+read_only = " "
+style = "blue bold"
+
+[git_branch]
+always_show_remote = true
+symbol = "🌱 "
+style = "purple bold"
+
+[git_commit]
+only_detached = false
+style = "bold green"
+
+[git_metrics]
+disabled = false
+added_style = "bold blue"
+deleted_style = "bold red"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "cyan bold"
+conflicted = "🏳"
+up_to_date = "✓"
+untracked = "🤷"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
+[nodejs]
+symbol = "❇️ "
+detect_files = ["package.json", ".node-version"]
+style = "bold green"
+
+[python]
+python_binary = "python3"
+symbol = "🐍 "
+style = "bold yellow"
+
+[rust]
+symbol = "🦀 "
+style = "bold red"
+
+[package]
+disabled = false
+symbol = "📦 "
+
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration](bold yellow)"
+
+[memory_usage]
+disabled = false
+threshold = 70
+symbol = "🐏"
+style = "bold dimmed white"
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = "%T"
+style = "bold yellow"

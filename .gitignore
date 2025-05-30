@@ -1,0 +1,13 @@
+# Backup files created by Makefile
+backup/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Personal files that shouldn't be shared
+**/hosts.yml
+**/*_personal*

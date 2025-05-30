@@ -1,0 +1,101 @@
+[user]
+	name = Bryan Veloso
+	email = bryan@velo.so
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ7/I2U8WBtLe+sxuzbx81ewE/q3ZJcmzW3i0QEopcJv
+
+[github]
+	user = bryanveloso
+
+[core]
+	editor = code --wait
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore_global
+
+[color]
+	interactive = auto
+	ui = auto
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+
+[delta]
+	features = line-numbers decorations
+	line-numbers = true
+
+[delta "decorations"]
+	minus-style = red bold normal
+	plus-style = green bold normal
+	minus-emph-style = white bold red
+	minus-non-emph-style = red bold normal
+	plus-emph-style = white bold green
+	plus-non-emph-style = green bold normal
+	file-style = yellow bold none
+	file-decoration-style = yellow box
+	hunk-header-style = magenta bold
+	hunk-header-decoration-style = magenta box
+	minus-empty-line-marker-style = normal normal
+	plus-empty-line-marker-style = normal normal
+	line-numbers-right-format = "{np:^4}│ "
+
+[alias]
+	amend = commit --amend
+	st = status -sb
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	visual = !gitk
+
+[help]
+	autocorrect = 1
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /opt/homebrew/bin/gpg
+	format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[rerere]
+	enabled = 1
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	default = simple
+
+[branch]
+	autosetupmerge = always
+
+[fetch]
+	prune = true
+
+[rebase]
+	autoStash = true
