@@ -11,3 +11,6 @@ backup/
 # Personal files that shouldn't be shared
 **/hosts.yml
 **/*_personal*
+
+# Claude local context (not for sharing)
+CLAUDE.local.md
